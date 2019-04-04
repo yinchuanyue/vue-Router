@@ -8,7 +8,12 @@
     <router-link to="/Hi1">Hi1</router-link>
      <router-link to="/vueHi1">vueHi1</router-link>
       <router-link to="/gohome1">gohome1</router-link>
+      <!-- 动画过度效果 transition -->
+      <transition name="fade" mode="out-in">
+      
+     
     <router-view/>
+     </transition>
    <!-- <router-view name="left" style="float:left; width:50%;height:200px;background-color: #eee" ></router-view> 
    <router-view name="right" style="float:right; width:50%;height:200px;background-color: #f0e"></router-view> -->
   </div>
@@ -28,5 +33,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+}
+.fade-enter{
+  opacity: 0px;
+}
+.fade-enter-active{
+  transition: opacity .5s;
+}
+.fade-leave{
+  opacity: 1;
+}
+.fade-leave-active{
+  opacity: 0;
+  transition: .5s;
 }
 </style>
