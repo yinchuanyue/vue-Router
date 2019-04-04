@@ -5,6 +5,9 @@
     <router-link to="/params/1/vue is very good">params</router-link>
     <router-link to="/gohome">goHome</router-link>
      <router-link to="/goParams/22/li li li">goParams</router-link>
+    <router-link to="/Hi1">Hi1</router-link>
+     <router-link to="/vueHi1">vueHi1</router-link>
+      <router-link to="/gohome1">gohome1</router-link>
     <router-view/>
    <!-- <router-view name="left" style="float:left; width:50%;height:200px;background-color: #eee" ></router-view> 
    <router-view name="right" style="float:right; width:50%;height:200px;background-color: #f0e"></router-view> -->
