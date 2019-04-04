@@ -21,16 +21,16 @@ export default new Router({
     },
     {
       path: '/params/:newsId(\\d+)/:newTitle',
-      component: Params,
-      beforeEnter: (to, form, next) => {
-        // eslint-disable-next-line no-unused-expressions
-        console.log(to),
-        console.log(form),
-        next(true)//点击后页面跳转
-       // next(false)//点击链接页面不跳转
-        //next({path: '/'})//点击params 页面跳转到Home 页面
-        //next()
-      }
+      component: Params
+      // beforeEnter: (to, form, next) => {
+      //   // eslint-disable-next-line no-unused-expressions
+      //   console.log(to),
+      //   console.log(form),
+      //   next(true)//点击后页面跳转
+      //  // next(false)//点击链接页面不跳转
+      //   //next({path: '/'})//点击params 页面跳转到Home 页面
+      //   //next()
+      // }
     },
     {
       path: '/goHome',//路径加反斜杠
