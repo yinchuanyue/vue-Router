@@ -4,9 +4,12 @@ import HelloWorld from '@/components/HelloWorld'
 import Hi1 from '@/components/Hi1'
 // import Hi2 from '@/components/Hi2'
 import Params from '@/components/params'
+import Error from '@/components/404page'
 Vue.use(Router)
 
 export default new Router({
+ // mode: 'history',//一般模式
+  mode: 'hash', //hash 模式 加#号
   routes: [
     {
       path: '/',
@@ -33,6 +36,10 @@ export default new Router({
       component: Hi1,
       alias: '/vueHi1'//别名
 
+    },
+    {
+      path: '*',
+      component: Error
     }
     // {
     //   path: '/jsyue',
